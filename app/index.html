@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1"/>
+    <link href = "css/main.css" type = "text/css" rel = "stylesheet"/>
+    <link rel="stylesheet" href="libs/fontawesome/css/all.css"/>
+
+    <script src="libs/jquery/dist/jquery.js" defer></script>
+
+    <script src="libs/handlebars/handlebars.js" defer></script>
+
+    <script id = "templateHB" type = "text/x-handlebars-template" defer>
+      <h1>{{title}}</h1>
+      <p>{{body}}</p>
+      <a href = "store.html" class = "button">{{button}}</a>
+    </script>
+
+    <script src = "js/libs.min.js" type = "text/javascript" defer></script>
+
+  <head/>
+
+  <body class = "flex_body">
+
+    <header class = "relative_header">
+      <div class = "button_toggler">
+        <span class="fas fa-align-justify fa-2x fa-inverse"></span>
+      </div>
+      <div class = "container">
+      <div class = "toggle">
+          <a href = "#" class = "brand">Musicon</a>
+          <nav>
+            <a href = "#">Home</a>
+            <a href = "store.html">Store</a>
+            <a href = "contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main role = "main" class = "main_content">
+    </main>
+
+    <footer>
+      <p>&copy Musicon</p>
+    </footer>
+
+  </body>
+</html>

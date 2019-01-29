@@ -1,0 +1,329 @@
+@import "_mixins.scss", "_placeholders.scss", "_variables.scss" ;
+
+*{
+  @extend %resetting;
+}
+
+html{
+  font-size: 16px;
+  @include adaptive(medium){
+    font-size: 15px;
+  };
+  @include adaptive(small){
+    font-size: 14px;
+  };
+  @include adaptive(extraSmall){
+    font-size: 12px;
+  };
+};
+
+body{
+  background: url('../img/musicon_bg.png') fixed center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+//for store & index
+
+.flex_body {
+  height: 100vh;
+  background: url('../img/musicon_bg.png') fixed center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
+  h1{
+    text-align: center;
+    @include font(white, 3rem);
+    @include adaptive(extraSmall){
+      font-size: 2.8rem;
+    };
+    @include indents($p1m0...);
+  };
+
+  p{
+    text-align: center;
+    @include font(white, 1rem);
+    @include indents($p1pt0pb0m0...);
+    @include adaptive(medium){
+      font-size: 1.07rem;
+    };
+    @include adaptive(small){
+      font-size: 1.17rem;
+    };
+    @include adaptive(extraSmall){
+      font-size: 1.17rem;
+    };
+  };
+
+};
+
+// Fucking HEADER!!!!!!!!!!!!
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  @include indents($p1m0...);
+    background-color: #F5A9A9;
+};
+
+.relative_header {
+  position: relative;
+};
+
+.button_toggler {
+  text-align: right;
+  display: none;
+  @include adaptive(extraSmall){
+    display: block;
+  };
+
+  @include adaptive(small){
+    display: block;
+  };
+
+  .fas {
+    cursor: pointer;
+    @include indents($p025m0...);
+  };
+
+};
+
+.container {
+  @include adaptive(extraSmall){
+    display: none;
+    padding-top: 1rem;
+  };
+  @include adaptive(small){
+    display: none;
+    padding-top: 1rem;
+  };
+  @include adaptive(extraLarge){
+    display: block !important;
+  };
+  @include adaptive(large){
+    display: block !important;
+  };
+  @include adaptive(medium){
+    display: block !important;
+  };
+
+  .toggle {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include adaptive(extraSmall){
+      font-size: 1.14rem;
+      flex-flow: column;
+    };
+
+    .brand {
+      @include font(white, 2rem);
+        display: inline;
+      @include adaptive(extraSmall){
+        display: none;
+      };
+    };
+
+    nav {
+      display: inline;
+
+      a {
+        @include adaptive(extraSmall){
+          display: block;
+          text-align: center;
+          font-size: 1.25rem;
+        };
+        @include font(white, 1rem);
+        @include indents($p05m0...);
+        @include adaptive(medium){
+          font-size: 1.07rem;
+        };
+        @include adaptive(small){
+          font-size: 1.14rem;
+        };
+      };
+    };
+
+  };
+};
+
+/////////
+
+.main_content {
+  @include indents($p1m0...);
+  @include font(white, 1rem);
+  text-align: center;
+  min-width: 336px;
+
+  h1 {
+    @include font(white, 3rem);
+    @include indents($pb1m0...);
+    @include adaptive(extraSmall){
+      font-size: 2.8rem;
+    };
+  };
+
+  p {
+    @include indents($pb1m0...);
+    @include adaptive(extraSmall){
+      font-size: 1.17rem;
+    };
+  };
+
+  a {
+    @include font(white, 2rem);
+  };
+
+  .button {
+    @extend %button;
+  };
+
+  .button_active {
+    box-shadow: 0 0 3rem #58ACFA;
+  };
+
+  section {
+    width: 70%;
+    @include indents($p0ma...);
+    @include adaptive(small){
+      width: 90%;
+    };
+    @include adaptive(extraSmall){
+      width: 100%;
+    };
+
+    article {
+      @include indents($p1mb10...);
+      display: flex;
+      flex-flow: row;
+      background-color: rgba(224, 248, 241, 0.5);
+      border-radius: 10px;
+
+      img {
+        width: 15rem;
+        height: auto;
+        max-height: 19rem;
+        @include adaptive(extraSmall){
+          display: none;
+        };
+      };
+
+      .details {
+        @include indents($pl1m0...);
+        @include font(black);
+        width: 100%;
+        text-align: left;
+        @include adaptive(extraSmall){
+          padding-left: 0;
+        };
+
+        .icon {
+          @include adaptive(extraSmall){
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row no-wrap;
+          };
+
+          h1 {
+            @include font(black, 2rem);
+            text-align: inherit;
+            @include adaptive(small){
+              font-size: 1.8rem;
+            };
+            @include adaptive(extraSmall){
+              font-size: 1.7rem;
+            };
+          };
+
+          img {
+            width: auto;
+            height: 3em;
+            margin: 0 0 1rem 1rem;
+            @include adaptive(extraLarge){
+              display: none;
+            };
+            @include adaptive(large){
+              display: none;
+            };
+            @include adaptive(medium){
+              display: none;
+            };
+            @include adaptive(small){
+              display: none;
+            };
+            @include adaptive(extraSmall){
+              display: inline;
+            };
+          };
+        };
+
+        .price {
+          font-weight: bold;
+        };
+
+        .sale {
+          font-weight: bold;
+          color: red;
+        };
+
+        .more_info {
+          background-color: lightgreen;
+          display: none;
+          @include indents($p0mt1...);
+        };
+
+      };
+    };
+  };
+};
+
+section {
+  min-width: 294px;
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include font(white, 1rem);
+    @include indents($p1m0...);
+
+    figure {
+      @include indents($p1pb0m0...);
+      display: inline-block;
+
+      img {
+        display: block;
+        height: 100%;
+      };
+    };
+
+    figcaption {
+      @include indents($p05m0...);
+      text-align: center;
+      @include adaptive(extraSmall){
+        max-width: 70%;
+      };
+    };
+
+  };
+};
+
+footer {
+  @include font(white, 1rem);
+  @include indents($p1m0...);
+  text-align: center;
+  p {
+    @include indents($p0m0...);
+  };
+  @include adaptive(medium){
+    font-size: 1.07rem;
+  };
+  @include adaptive(small){
+    font-size: 1.07rem;
+  };
+};

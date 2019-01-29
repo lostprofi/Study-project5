@@ -1,0 +1,23 @@
+{
+  "name": "my bower package",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "lostprofi <o-lazarchik@mail.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "^5.6.3",
+    "jquery": "^3.3.1",
+    "handlebars": "^4.0.12"
+  }
+}

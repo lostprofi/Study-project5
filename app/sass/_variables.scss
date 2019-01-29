@@ -1,0 +1,144 @@
+// indents variables (paddings & margins)
+
+$p0m0: (
+padtop: 0,
+padright: 0,
+padbottom: 0,
+padleft: 0,
+margtop: 0,
+margright: 0,
+margbottom: 0,
+margleft: 0
+);
+
+$p1m0: (
+padtop: 1rem,
+padright: 1rem,
+padbottom: 1rem,
+padleft: 1rem,
+margtop: 0,
+margright: 0,
+margbottom: 0,
+margleft: 0
+);
+
+$p05m0: (
+padtop: 0.5rem,
+padright: 0.5rem,
+padbottom: 0.5rem,
+padleft: 0.5rem,
+margtop: 0,
+margright: 0,
+margbottom: 0,
+margleft: 0
+);
+
+$p025m0: (
+padtop: 0.25rem,
+padright: 0.25rem,
+padbottom: 0.25rem,
+padleft: 0.25rem,
+margtop: 0,
+margright: 0,
+margbottom: 0,
+margleft: 0
+);
+
+$p05l0m0: (
+padtop: 0.5rem,
+padright: 0.5rem,
+padbottom: 0.5rem,
+padleft: 0,
+margtop: 0,
+margright: 0,
+margbottom: 0,
+margleft: 0
+);
+
+$pb1m0: (
+padtop: 0,
+padright: 0,
+padbottom: 1rem,
+padleft: 0,
+margtop: 0,
+margright: 0,
+margbottom: 0,
+margleft: 0
+);
+
+$p0ma: (
+padtop: 0,
+padright: 0,
+padbottom: 0,
+padleft: 0,
+margtop: 0,
+margright: auto,
+margbottom: 0,
+margleft: auto
+);
+
+$p1mb10: (
+padtop: 1rem,
+padright: 1rem,
+padbottom: 1rem,
+padleft: 1rem,
+margtop: 0,
+margright: 0,
+margbottom: 1rem,
+margleft: 0
+);
+
+$pl1m0: (
+padtop: 0,
+padright: 0,
+padbottom: 0,
+padleft: 1rem,
+margtop: 0,
+margright: 0,
+margbottom: 0,
+margleft: 0
+);
+
+$p0mt1: (
+padtop: 0,
+padright: 0,
+padbottom: 0,
+padleft: 0,
+margtop: 1rem,
+margright: 0,
+margbottom: 0,
+margleft: 0
+);
+
+$p1pt0pb0m0: (
+padtop: 0,
+padright: 1rem,
+padbottom: 0,
+padleft: 1rem,
+margtop: 0,
+margright: 0,
+margbottom: 0,
+margleft: 0
+);
+
+$p1pb0m0: (
+padtop: 1rem,
+padright: 1rem,
+padbottom: 0,
+padleft: 1rem,
+margtop: 0,
+margright: 0,
+margbottom: 0,
+margleft: 0
+);
+
+
+//breakpoints
+
+$breakpoints: (
+extraLarge: 1200px,
+large: 992px,
+medium: 768px,
+small: 576px,
+extraSmall: 575px
+);

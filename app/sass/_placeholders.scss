@@ -1,0 +1,18 @@
+@import "_variables.scss" ;
+
+//resetting page options
+%resetting {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//button placeholder
+%button{
+  @include indents($p05m0...);
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #58ACFA;
+  cursor: pointer;
+}
